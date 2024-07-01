@@ -1,27 +1,31 @@
 package main
 
 import (
-	"fmt"
-	"io"
 	"log"
 	"net/http"
 
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo"
+	"github.com/lalizita/streaming-key-server-manager/config/db"
+	"github.com/lalizita/streaming-key-server-manager/internal/handler"
+	"github.com/lalizita/streaming-key-server-manager/internal/repository"
+	"github.com/lalizita/streaming-key-server-manager/internal/service"
 )
 
 func main() {
+	db, err := db.OpenConn()
+	if err != nil {
+		log.Fatalf("Error connect databse main L15")
+	}
+
+	//init app
+	keysRepository := repository.NewKeyRepository(db)
+	keysService := service.NewKeysService(keysRepository)
+	keysHandler := handler.NewHandler(keysService)
+
+	log.Default().Println("Routing...")
 	e := echo.New()
 
-	e.POST("/auth", func(c echo.Context) error {
-		log.Default().Println("Running auth...")
-		body := c.Request().Body
-		defer body.Close()
-
-		fields, _ := io.ReadAll(body)
-		fmt.Println(string(fields))
-
-		return c.String(http.StatusOK, "WORKING")
-	})
+	e.POST("/auth", keysHandler.AuthStreamingKey)
 	e.GET("/healthcheck", func(c echo.Context) error {
 		return c.String(http.StatusOK, "WORKING")
 	})

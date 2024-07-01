@@ -1,0 +1,4 @@
+CREATE TABLE "Lives" (
+    "name" VARCHAR(255) NOT NULL,
+    "stream-key" VARCHAR(255) PRIMARY KEY NOT NULL
+);
