@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/labstack/gommon/log"
-	"github.com/lalizita/streaming-key-server-manager/internal/model"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/model"
 )
 
 var (

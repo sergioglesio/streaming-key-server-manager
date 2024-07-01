@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/labstack/echo"
-	"github.com/lalizita/streaming-key-server-manager/internal/model"
-	"github.com/lalizita/streaming-key-server-manager/internal/service"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/model"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/service"
 )
 
 type IKeysHandler interface {

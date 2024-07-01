@@ -1,4 +1,4 @@
-module github.com/lalizita/streaming-key-server-manager
+module github.com/sergioglesio/streaming-key-server-manager
 
 go 1.22
 

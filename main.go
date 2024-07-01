@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"github.com/lalizita/streaming-key-server-manager/config/db"
-	"github.com/lalizita/streaming-key-server-manager/internal/handler"
-	"github.com/lalizita/streaming-key-server-manager/internal/repository"
-	"github.com/lalizita/streaming-key-server-manager/internal/service"
+	"github.com/sergioglesio/streaming-key-server-manager/config/db"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/handler"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/repository"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/service"
 )
 
 func main() {

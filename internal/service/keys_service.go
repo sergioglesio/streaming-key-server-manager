@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/lalizita/streaming-key-server-manager/internal/model"
-	"github.com/lalizita/streaming-key-server-manager/internal/repository"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/model"
+	"github.com/sergioglesio/streaming-key-server-manager/internal/repository"
 )
 
 type IKeyService interface {
