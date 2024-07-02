@@ -35,7 +35,7 @@ Ensure you have the following installed:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/streaming-key-server.git
+git clone https://github.com/sergioglesio/streaming-key-server.git
 cd streaming-key-server 
 ```
 
@@ -80,4 +80,4 @@ This project is free and open-source software licensed under the [Apache 2.0 Lic
 [repo_license_url]: https://github.com/sergioglesio/streaming-key-server-manager
 [repo_cc_url]: https://github.com/sergioglesio/streaming-key-server-manager
 [author]: https://github.com/sergioglesio
-[cgapp_create_gif]: https://github.com/sergioglesio/streaming-key-server-manager/movie/streaming.gif
+[cgapp_create_gif]: https://github.com/sergioglesio/streaming-key-server-manager/image/image.png
