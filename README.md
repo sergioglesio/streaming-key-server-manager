@@ -80,4 +80,4 @@ This project is free and open-source software licensed under the [Apache 2.0 Lic
 [repo_license_url]: https://github.com/sergioglesio/streaming-key-server-manager
 [repo_cc_url]: https://github.com/sergioglesio/streaming-key-server-manager
 [author]: https://github.com/sergioglesio
-[cgapp_create_gif]: https://github.com/sergioglesio/streaming-key-server-manager/image/image.png
+[cgapp_create_gif]: https://github.com/sergioglesio/streaming-key-server-manager/blob/main/image/image.png
